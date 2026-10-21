@@ -1,7 +1,8 @@
-
+package src;
 import java.util.Scanner;
 
 public class calculadora {
+    //Classe principal da calculadora
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -14,6 +15,7 @@ public class calculadora {
         System.out.print("Digite o segundo número: ");
         double n2 = sc.nextDouble();
 
+        // Estrutura de controle switch para realizar a operação com base no operador fornecido
         switch (operador) {
             case "+":
                 System.out.println("Resultado: " + (n1 + n2));
@@ -34,7 +36,6 @@ public class calculadora {
             default:
                 System.out.println("Operador inválido!");
         }
-
         sc.close();
     }
 }
